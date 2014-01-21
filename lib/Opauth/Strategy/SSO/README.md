@@ -1,22 +1,18 @@
 Opauth-SSO
 =============
-[Opauth][1] strategy for sso.tusur.ru authentication.
+[Opauth](https://github.com/opauth/opauth) strategy for [sso.tusur.ru](http://sso.tusur.ru/) authentication.
 
 Getting started
 ----------------
-1. Install Opauth-Facebook:
+1. Install SSO-strategy:
    ```bash
    cd path_to_opauth/Strategy
-   git clone https://github.com/opauth/facebook.git Facebook
+   git clone https://github.com/Nimdis/sso-strategy.git SSO
    ```
 
-2. Create Facebook application at https://developers.facebook.com/apps/
-   - Remember to enter App Domains
-   - "Website with Facebook Login" must be checked, but for "Site URL", you can enter any landing URL.
+2. Configure SSO-strategy with at least `Client ID` and `Client Secret`.
 
-3. Configure Opauth-Facebook strategy with at least `App ID` and `App Secret`.
-
-4. Direct user to `http://path_to_opauth/facebook` to authenticate
+3. Direct user to `http://path_to_opauth/sso` to authenticate
 
 Strategy configuration
 ----------------------
@@ -25,19 +21,15 @@ Required parameters:
 
 ```php
 <?php
-'Facebook' => array(
-	'app_id' => 'YOUR APP ID',
-	'app_secret' => 'YOUR APP SECRET'
+    'SSO' => array(
+      'client_id' => 'your_client_id',
+      'client_secret' => 'your_client_secret'
+    )
 )
 ```
 
-Even though `scope` is an optional configuration parameter for Opauth-Facebook, for most cases you would like to explicitly define it. It should be defined in a comma-separated string. 
-
-Refer to [Facebook Permissions Reference](https://developers.facebook.com/docs/authentication/permissions/) for list of valid permissions..
-
 License
 ---------
-Opauth-Facebook is MIT Licensed  
-Copyright © 2012 U-Zyn Chua (http://uzyn.com)
+SSO-strategy is MIT Licensed  
+Copyright © 2014 OpenTeam (https://github.com/openteam), Sergei Toroshchin (https://github.com/Nimdis)
 
-[1]: https://github.com/opauth/opauth
