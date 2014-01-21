@@ -45,8 +45,8 @@ OAuth
 1. SSO-strategy (https://github.com/Nimdis/sso-strategy)
 2. Opauth for Yii Framework (https://github.com/kahwee/yii-opauth)
 3. Opauth (https://github.com/opauth/opauth)
-4. Презентация ()
-5. Доклад ()
+4. Презентация (https://docs.google.com/presentation/d/1ipYPWAhJi_0gKS2e1CPQ54IuYec9PtNRdq9_ZEYdV4Y/edit?usp=sharing)
+5. Доклад (https://github.com/Nimdis/oauth-php/blob/master/oauth.md)
 
 ####Использованные материалы:
 1. http://en.wikipedia.org/wiki/Oauth, http://ru.wikipedia.org/wiki/OAuth
