@@ -40,3 +40,15 @@ OAuth
 7. Используя новый токен, клиент обращается к серверу за ресурсами.
 8. Сервер подтверждает запрос и предоставляет ресурсы.
 ![pseudo oauth](https://github.com/Nimdis/oauth-php/blob/master/imgs/512px-OpenIDvs.Pseudo-AuthenticationusingOAuth.svg.png?raw=true)
+
+####Полезные ссылки:
+1. SSO-strategy (https://github.com/Nimdis/sso-strategy)
+2. Opauth for Yii Framework (https://github.com/kahwee/yii-opauth)
+3. Opauth (https://github.com/opauth/opauth)
+4. Презентация ()
+5. Доклад ()
+
+####Использованные материалы:
+1. http://en.wikipedia.org/wiki/Oauth, http://ru.wikipedia.org/wiki/OAuth
+2. Различные случайные картинки по теме.
+3. https://github.com/opauth/opauth/wiki
