@@ -28,5 +28,3 @@ require CONF_FILE;
  */
 require OPAUTH_LIB_DIR.'Opauth.php';
 $Opauth = new Opauth( $config );
-echo('asf');
-var_dump($Opauth);
