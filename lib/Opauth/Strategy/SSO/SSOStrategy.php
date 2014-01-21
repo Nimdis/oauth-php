@@ -1,22 +1,16 @@
 <?php
 /**
- * Google strategy for Opauth
- * based on https://developers.google.com/accounts/docs/OAuth2
+ * SSO strategy for Opauth
+ * based on https://github.com/opauth/google
  *
  * More information on Opauth: http://opauth.org
  *
- * @copyright    Copyright © 2012 U-Zyn Chua (http://uzyn.com)
- * @link         http://opauth.org
- * @package      Opauth.GoogleStrategy
+ * @copyright Copyright © 2014 OpenTeam (https://github.com/openteam), Sergei Toroshchin (https://github.com/Nimdis)
+ * @link         https://github.com/Nimdis/sso-strategy
+ * @package      Opauth.SSOStrategy
  * @license      MIT License
  */
 
-/**
- * Google strategy for Opauth
- * based on https://developers.google.com/accounts/docs/OAuth2
- *
- * @package			Opauth.Google
- */
 class SSOStrategy extends OpauthStrategy{
 
 	/**
@@ -93,12 +87,6 @@ class SSOStrategy extends OpauthStrategy{
 					$this->auth['credentials']['refresh_token'] = $results->refresh_token;
 				}
 
-				//$this->mapProfile($userinfo, 'name', 'info.name');
-				//$this->mapProfile($userinfo, 'email', 'info.email');
-				//$this->mapProfile($userinfo, 'given_name', 'info.first_name');
-				//$this->mapProfile($userinfo, 'family_name', 'info.last_name');
-				//$this->mapProfile($userinfo, 'picture', 'info.image');
-
 				$this->callback();
 			}
 			else{
@@ -125,8 +113,6 @@ class SSOStrategy extends OpauthStrategy{
 	}
 
 	/**
-	 * Queries Google API for user info
-	 *
 	 * @param string $access_token
 	 * @return array Parsed JSON results
 	 */
