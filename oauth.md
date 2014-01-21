@@ -1,21 +1,21 @@
 OAuth
 =====
 
-![authentification](https://github.com/Nimdis/oauth-php/blob/master/Authentication.jpg?raw=true)
+![authentification](https://github.com/Nimdis/oauth-php/blob/master/imgs/Authentication.jpg?raw=true)
 
 **Аутенитификация** - процедура проверки подлинности. К примеру введенных данных пользователя (логин, пароль).
 
-![authorization](https://github.com/Nimdis/oauth-php/blob/master/from-permission-to-authorization_1.jpg?raw=true)
+![authorization](https://github.com/Nimdis/oauth-php/blob/master/imgs/from-permission-to-authorization_1.jpg?raw=true)
 
 **Авторизация** - предоставление определенному лицу или группе лиц прав на определенное действие.
 
-![oauth](https://github.com/Nimdis/oauth-php/blob/master/180px-Oauth_logo.svg.png?raw=true)
+![oauth](https://github.com/Nimdis/oauth-php/blob/master/imgs/180px-Oauth_logo.svg.png?raw=true)
 
 **OAuth** - открытый протокол авторизации который позволяет предоставить третьей стороне ограниченный доступ к защищенным ресурсам пользователя без необходимости передавать ей логин и пароль.
 
 ####Основы
 Клиент, сервер, владелец ресурса.  
-![client](https://github.com/Nimdis/oauth-php/blob/master/Server.jpg?raw=true)![server](https://github.com/Nimdis/oauth-php/blob/master/Server.jpg?raw=true)![owner](https://github.com/Nimdis/oauth-php/blob/master/happy-client-business.jpg?raw=true)  
+![client](https://github.com/Nimdis/oauth-php/blob/master/imgs/Server.jpg?raw=true)![server](https://github.com/Nimdis/oauth-php/blob/master/imgs/Server.jpg?raw=true)![owner](https://github.com/Nimdis/oauth-php/blob/master/imgs/happy-client-business.jpg?raw=true)  
 Клиент - потребитель OAuth, т.е. сервер получающий данные о клиенте.  
 Сервер - сервер, передающий данные о клиенте.  
 Владелец ресурса - пользователь.  
@@ -28,7 +28,7 @@ OAuth
 2. *Повышение лояльности пользователей.* У пользователя больше оснований доверять сервису, т.к. получить доступ к его данным сложнее, либо невозможно.
 3. *Удобство для пользователей.* Отсутствие необходимости много раз проходить процедуру аутентификации, а также упрощении данной процедуры для клиентских серверов.
 
-![oauth](https://github.com/Nimdis/oauth-php/blob/master/OAuth.png?raw=true)
+![oauth](https://github.com/Nimdis/oauth-php/blob/master/imgs/OAuth.png?raw=true)
 
 ####Как работает OAuth
 1. Клиент посредством протокола HTTPS отправляет серверу запрос, который содержит идентификатор клиента, метку времени, адрес обратного вызова по которому нужно вернуть токен, используемый тип цифровой подписи и саму подпись.
@@ -39,4 +39,4 @@ OAuth
 6. Сервер подтверждает запрос и отвечает клиенту новым токеном доступа (Access Token).
 7. Используя новый токен, клиент обращается к серверу за ресурсами.
 8. Сервер подтверждает запрос и предоставляет ресурсы.
-![pseudo oauth](https://github.com/Nimdis/oauth-php/blob/master/512px-OpenIDvs.Pseudo-AuthenticationusingOAuth.svg.png?raw=true)
+![pseudo oauth](https://github.com/Nimdis/oauth-php/blob/master/imgs/512px-OpenIDvs.Pseudo-AuthenticationusingOAuth.svg.png?raw=true)
